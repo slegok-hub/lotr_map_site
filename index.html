@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта меток</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="shapePicker">Форма:</label>
+        <select id="shapePicker">
+            <option value="circle">Кружок</option>
+            <option value="square">Квадрат</option>
+            <option value="triangle">Треугольник</option>
+        </select>
+
+        <label for="colorPicker">Цвет:</label>
+        <input type="color" id="colorPicker" value="#ff0000">
+        
+        <span id="status">Кликните по карте, чтобы поставить метку. <br><small>Правый клик по метке — удалить.</small></span>
+    </div>
+
+    <div id="map-container">
+        <img src="map.jpg" id="map-image" alt="Карта">
+        <div id="markers-layer"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
