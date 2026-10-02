@@ -31,8 +31,8 @@ body {
 #map-container {
     position: relative;
     max-width: 95vw;
-    max-height: 85vh;
-    overflow: auto;
+    /* Убрали ограничение по высоте и внутреннюю прокрутку */
+    margin-bottom: 50px; /* Отступ, чтобы страница могла прокрутиться вниз */
     border: 2px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
